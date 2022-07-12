@@ -1,4 +1,6 @@
-# jornada-dev.github.io
-Currículo do Jornada Dev
+# Currículo do Jornada Dev
+https://bamarcheti.github.io/jornada-dev/
 
-# https://github.com/Bamarcheti/JornadaDev.git
+
+# GitHub
+https://github.com/Bamarcheti/JornadaDev.git
