@@ -12,7 +12,7 @@ body {
 }
 
 .resume-contents {
-  min-height: 100vh;
+  height: 100%;
   width: 80%;
   margin: 2rem auto;
   display: grid;
@@ -33,7 +33,7 @@ body {
   border-radius: 0px 60px 0px 0px;
 }
 
-.left-section-contents {
+.left-section-content {
   padding: 2rem 2rem;
 }
 
@@ -66,7 +66,6 @@ body {
   padding-bottom: 1rem;
 }
 
-/* .contact-info { border-bottom: 2px solid #1B2631; } */
 .left-title {
   color: #fdb44b;
   font-size: 20px;
@@ -82,8 +81,7 @@ body {
   padding-top: 1.5rem;
 }
 
-.contact-info ul li,
-.references ul li {
+.contact-info ul li {
   padding: 0.4rem 0;
   display: flex;
   align-items: center;
@@ -92,8 +90,7 @@ body {
   font-size: 18px;
 }
 
-.contact-info ul li i,
-.references ul li i {
+.contact-info ul li i {
   padding-right: 1rem;
   font-size: 18px;
   color: #2e86c1;
@@ -114,7 +111,7 @@ body {
 
 .contact-info,
 .skills {
-  padding: 10px;
+  padding: 7px;
 }
 
 .referance-name {
@@ -130,11 +127,10 @@ body {
   font-size: 16px;
   color: #d6dbdfaf;
   letter-spacing: 1px;
-  /* text-transform: uppercase; */
   padding-bottom: 0.4rem;
 }
 
-.right-section-contents {
+.right-section-content {
   padding: 2rem 2rem;
 }
 
@@ -210,7 +206,22 @@ body {
 }
 
 /* Media queries */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 768px) {
+  .resume-contents {
+    width: 98%;
+  }
+
+  .contact-info ul li {
+    font-size: 14px;
+  }
+
+  .skills ul li p {
+    font-size: 14px;
+    padding: 0.4rem 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
   body {
     font-size: 14px;
   }
@@ -218,6 +229,8 @@ body {
   .resume-contents {
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .name {
@@ -232,22 +245,25 @@ body {
     font-size: 18px;
   }
 
+  .right-section {
+    border-radius: 0px 0px 0px 0px;
+  }
+
   .right-title {
     font-size: 18px;
     padding: 1rem 0;
   }
-  .contact-info ul li,
-  .references ul li {
-    font-size: 12px;
+
+  .contact-info ul li {
+    font-size: 16px;
   }
 
-  .contact-info ul li i,
-  .references ul li i {
-    font-size: 12px;
+  .contact-info ul li i {
+    font-size: 16px;
   }
 
   .skills ul li p {
-    font-size: 12px;
+    font-size: 16px;
     padding: 0.4rem 0;
   }
 
